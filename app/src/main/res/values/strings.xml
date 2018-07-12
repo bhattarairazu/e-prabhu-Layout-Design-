@@ -1,0 +1,84 @@
+<resources>
+
+    <string name="sim" />
+
+
+    -
+    <string-array name="sim_name">
+
+        <item>NTC prepaid</item>
+
+        <item>Ncell Prepaid</item>
+
+        <item>UTL Mobile</item>
+
+        <item>Smart Cell Topup</item>
+
+        <item>Nt CDMA(Sky)Prepaid</item>
+
+        <item>Singapore</item>
+
+        <item>New Zealand</item>
+
+        <item>India</item>
+
+    </string-array>
+
+    <string name="money" />
+
+
+    -
+    <string-array name="money1">
+
+        <item>10</item>
+
+        <item>20</item>
+
+        <item>30</item>
+
+        <item>40</item>
+
+        <item>50</item>
+
+        <item>100</item>
+
+        <item>150</item>
+
+        <item>200</item>
+
+        <item>250</item>
+
+        <item>300</item>
+
+        <item>350</item>
+
+        <item>400</item>
+
+        <item>450</item>
+
+        <item>500</item>
+
+        <item>550</item>
+
+        <item>600</item>
+
+        <item>650</item>
+
+        <item>700</item>
+
+        <item>750</item>
+
+        <item>800</item>
+
+        <item>850</item>
+
+        <item>900</item>
+
+        <item>950</item>
+
+        <item>1000</item>
+
+    </string-array>
+
+
+</resources>

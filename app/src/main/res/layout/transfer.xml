@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/ic_navigateback1"
+                android:id="@+id/btn_left1"
+                android:layout_gravity="start|center_vertical" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="e-Prabhu"
+                android:textSize="24sp"
+                android:textColor="#ffff"
+                android:layout_gravity="center"/>
+
+            <!--<Button-->
+                <!--android:layout_width="28dp"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:background="@drawable/ic_navigate_next_black_24dp"-->
+                <!--android:id="@+id/title_bar_right_menu"-->
+                <!--android:layout_gravity="end|center_vertical"-->
+                <!--android:layout_marginLeft="10dp"/>-->
+        </FrameLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/cardies"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#ffffff">
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:text="Mobile"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/helpicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_help_outline_black_24dp"
+           android:layout_marginEnd="4dp"
+            android:gravity="end|center_vertical"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="50dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="3"
+           android:orientation="horizontal">
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/input_layout_number"
+               android:layout_width="wrap_content"
+               android:layout_weight="2"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp">
+
+               <EditText
+                   android:id="@+id/callContacts"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:ems="10"
+                   android:hint="Enter 10 digit mobile number"
+                   android:inputType="number"
+                   android:textColorHint="#000000"
+                   android:textStyle="bold"/>
+                   <!--android:drawableRight="@drawable/ic_contacts_black_24dp"/>-->
+
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" -->
+                        <!--android:id="@+id/mimageview"-->
+                        <!--android:onClick="callContacts"-->
+                        <!--/>-->
+
+           </android.support.design.widget.TextInputLayout>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:clickable="true"
+               android:onClick="callContacts"
+               android:layout_marginTop="12dp"
+               android:layout_gravity="center"
+               android:src="@drawable/ic_contacts_black_24dp"/>
+       </LinearLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/sim_name"
+                android:prompt="@string/sim" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="1dp">
+
+            </View>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/money1"
+                android:prompt="@string/money" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="1dp">
+
+            </View>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_alert"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/roundbutton"
+            android:text="Submit"
+            android:elevation="10dp"
+            android:textColor="#ffffff" />
+  </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

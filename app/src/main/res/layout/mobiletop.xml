@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_top">
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:background="#2ea3fe"/>-->
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbars"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/ToolBars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+                app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+                <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/ic_menu"
+                android:id="@+id/title_bar_left_menu"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="e-Prabhu"
+                    android:textSize="24sp"
+                    android:textColor="#ffff"
+                    android:layout_gravity="center"/>
+
+
+                <!--<Button-->
+                <!--android:layout_width="28dp"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:background="@drawable/ic_options"-->
+                <!--android:id="@+id/title_bar_right_menu"-->
+                <!--android:layout_gravity="end|center_vertical"-->
+                <!--android:layout_marginLeft="10dp"/>-->
+
+
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <FrameLayout
+        android:layout_width="fill_parent"
+        android:background="#ffff"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/ic_navigateback"
+            android:id="@+id/btn_left"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="Mobile Topup"
+            android:id="@+id/recharge"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/ic_navigatefront"
+            android:id="@+id/btn_right"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </FrameLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb"/>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:orientation="horizontal"
+        android:background="#ffff"
+        android:weightSum="6">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center|center_horizontal"
+            android:elevation="10dp"
+            android:background="@drawable/selector_tab_red"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:background="@drawable/selectortab_red_original"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:background="@drawable/selectortab_red_original"/>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:background="@drawable/selectortab_red_original"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:background="@drawable/selectortab_red_original"/>
+        <View
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:background="@drawable/selectortab_red_original"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:tabGravity="fill"
+        android:scrollIndicators="top"
+        android:background="#ffff"
+        app:tabIndicatorColor="#ffff"
+        app:tabMode="fixed"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb"/>
+</LinearLayout>

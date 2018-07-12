@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="40dp"
+    android:background="@color/cardview_light_background"
+    android:layout_above="@+id/bottom_navigation"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_new_navigation_appbar">
+ <!--tools:context=".Activity.Favourite"-->
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:animateLayoutChanges="true"-->
+        <!--android:layout_height="match_parent">-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="2dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recharge"
+            android:textSize="15dp"
+            android:layout_margin="5dp"/>
+        <!--android:textColor="@color/colorPrimary"-->
+
+            />
+        <!--<view-->
+            <!--android:layout_width="320dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1.8"
+            android:focusable="false"
+            android:hint="Enter 10 Digit Mobile Number"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1.7"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"/>
+                <!--android:hint="Enter 10 Digit Number"-->
+
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/mtbn_submit"
+            android:layout_weight=".2"
+            android:layout_margin="2dp"
+            android:background="@drawable/roundbutton"
+            android:text="Submit"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:padding="3dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2"
+            >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Favourite"
+        android:textSize="15dp"
+        android:padding="4dp"
+
+        android:layout_margin="8dp"
+        />
+    <!--<view-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--/>-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        app:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rippleeffect"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            <!--<com.skyfishjy.library.RippleBackground-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/content"-->
+            <!--app:rb_color="#785855"-->
+            <!--app:rb_radius="32dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--app:rb_rippleAmount="1"-->
+            <!--app:rb_duration="3000"-->
+            <!--app:rb_scale="6">-->
+            <ImageView
+                android:id="@+id/imgmobile"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/bill_payment" />
+            <!--</com.skyfishjy.library.RippleBackground>-->
+            <!--</com.andexert.library.RippleView>-->
+            <TextView
+                android:id="@+id/txtxmobile"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Mobile Topup"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:elevation="3dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearrecharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rippleeffect"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgrecharge"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:src="@drawable/recharge_card" />
+
+            <TextView
+                android:id="@+id/txtxrecharge"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Recharge Pin "
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view50"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:elevation="3dp"
+        android:padding="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearbill"
+            android:layout_width="match_parent"
+            android:background="@drawable/rippleeffect"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgbill"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:src="@drawable/bill_payment" />
+
+            <TextView
+                android:id="@+id/txtbill"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Bill Payment"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearmoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rippleeffect"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgtransfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/money_transfer" />
+
+                        <TextView
+
+                            android:id="@+id/txttransfer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Money Transfer"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+</LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!--next all layout-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:layout_marginBottom="20dp"
+        android:padding="3dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textSize="15dp"
+                android:padding="4dp"
+
+                android:layout_margin="8dp"
+                />
+            <!--<view-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    app:cardElevation="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearmobile1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <!--<com.skyfishjy.library.RippleBackground-->
+                        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/content"-->
+                        <!--app:rb_color="#785855"-->
+                        <!--app:rb_radius="32dp"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--app:rb_rippleAmount="1"-->
+                        <!--app:rb_duration="3000"-->
+                        <!--app:rb_scale="6">-->
+                        <ImageView
+                            android:id="@+id/imgmobile1"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+
+                            android:src="@drawable/bill_payment" />
+                        <!--</com.skyfishjy.library.RippleBackground>-->
+                        <!--</com.andexert.library.RippleView>-->
+                        <TextView
+                            android:id="@+id/txtxmobile1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Mobile Topup"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearrecharge1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgrecharge1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/recharge_card" />
+
+                        <TextView
+                            android:id="@+id/txtxrecharge1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Recharge Pin "
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view501"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearbill1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgbill1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/bill_payment" />
+
+                        <TextView
+                            android:id="@+id/txtbill1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Bill Payment"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearmoney1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgtransfer1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/money_transfer" />
+
+                        <TextView
+
+                            android:id="@+id/txttransfer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Money Transfer"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <!--vertical next layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    app:cardElevation="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearmobile13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <!--<com.skyfishjy.library.RippleBackground-->
+                        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/content"-->
+                        <!--app:rb_color="#785855"-->
+                        <!--app:rb_radius="32dp"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--app:rb_rippleAmount="1"-->
+                        <!--app:rb_duration="3000"-->
+                        <!--app:rb_scale="6">-->
+                        <ImageView
+                            android:id="@+id/imgmobile13"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/bill_payment" />
+                        <!--</com.skyfishjy.library.RippleBackground>-->
+                        <!--</com.andexert.library.RippleView>-->
+                        <TextView
+                            android:id="@+id/txtxmobile13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Mobile Topup"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearrecharge13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgrecharge13"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/recharge_card" />
+
+                        <TextView
+                            android:id="@+id/txtxrecharge13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Recharge Pin "
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view5013"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearbill13"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgbill13"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/bill_payment" />
+
+                        <TextView
+                            android:id="@+id/txtbill13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Bill Payment"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearmoney13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgtransfer13"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/money_transfer" />
+
+                        <TextView
+
+                            android:id="@+id/txttransfer13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Money Transfer"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <!--next vertical layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    app:cardElevation="0dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearmobile12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <!--<com.skyfishjy.library.RippleBackground-->
+                        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:id="@+id/content"-->
+                        <!--app:rb_color="#785855"-->
+                        <!--app:rb_radius="32dp"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--app:rb_rippleAmount="1"-->
+                        <!--app:rb_duration="3000"-->
+                        <!--app:rb_scale="6">-->
+                        <ImageView
+                            android:id="@+id/imgmobile12"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/bill_payment" />
+                        <!--</com.skyfishjy.library.RippleBackground>-->
+                        <!--</com.andexert.library.RippleView>-->
+                        <TextView
+                            android:id="@+id/txtxmobile12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Mobile Topup"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearrecharge12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgrecharge12"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/recharge_card" />
+
+                        <TextView
+                            android:id="@+id/txtxrecharge12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Recharge Pin "
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view5012"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearbill12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgbill12"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/bill_payment" />
+
+                        <TextView
+                            android:id="@+id/txtbill12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Bill Payment"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view212"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearmoney12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgtransfer12"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:src="@drawable/money_transfer" />
+
+                        <TextView
+
+                            android:id="@+id/txttransfer12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Money Transfer"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+    <!--<view-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--/>-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
+</android.support.v4.widget.NestedScrollView>
